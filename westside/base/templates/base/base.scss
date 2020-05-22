@@ -1,0 +1,102 @@
+$font-stack:    Montserrat, sans-serif;
+$font-color: #333;
+$primary-color: #A61B1B;
+$secondary-color: #5B6FB0;
+$header-color: #343F64;
+
+body {
+  font: 100% $font-stack;
+  color: $font-color;
+}
+
+%hero_image {
+  background-size: cover;
+  color: white;
+  text-align: right;
+  margin-bottom: 0;
+  height: 500px;
+}
+
+.home_hero {
+  // TODO: Add gradient to images that adjustes based on viewport size
+  @extend %hero_image;
+  background-image: url("img/hero_image.png");
+}
+
+.btn {
+  &:hover {
+    background-color: $primary-color;
+  }
+}
+
+.btn-primary {
+  background-color: $primary-color;
+  font-weight: bold;
+  border: none;
+  border-radius: none;
+}
+
+.verse-section {
+  padding-top:2.5%;
+  padding-bottom: 2.5%;
+  background-color: $secondary-color;
+  color: white;
+}
+
+.header-text {
+  color: $header-color;
+  font-weight: bold;
+}
+
+.nav-link {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-top: 10px;
+  font-weight: bold;
+  &.btn {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 8px;
+  }
+  &.active {
+    color: $primary-color;
+  }
+}
+
+.values-section {
+  padding-top:2.5%;
+  padding-bottom: 2.5%;
+  background-color: $secondary-color;
+  color: white;
+}
+
+.mission-section {
+  padding-top:2.5%;
+  padding-bottom: 2.5%;
+}
+
+.img-nav {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url("img/elementary_nav.png") center center;
+    opacity: .4;
+    width: 100%;
+    height: 100%;
+}
+
+.img-nav-text{
+  padding-top:200px;
+  padding-bottom:200px;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+@media (min-width: 850px) {
+  .container {
+    width: 820px;
+  }
+}
