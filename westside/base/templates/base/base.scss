@@ -1,8 +1,9 @@
 $font-stack:    Montserrat, sans-serif;
-$font-color: #333;
 $primary-color: #A61B1B;
 $secondary-color: #5B6FB0;
 $header-color: #343F64;
+$primary-grey: #2E2E2E;
+$font-color: $primary-grey;
 
 body {
   font: 100% $font-stack;
@@ -10,11 +11,13 @@ body {
 }
 
 %hero_image {
+  padding-top: 175px;
   background-size: cover;
   color: white;
   text-align: right;
   margin-bottom: 0;
   height: 500px;
+  padding-right: 15px;
 }
 
 .home_hero {
@@ -23,17 +26,40 @@ body {
   background-image: url("img/hero_image.png");
 }
 
-.btn {
-  &:hover {
-    background-color: $primary-color;
-  }
-}
+
+
+
 
 .btn-primary {
   background-color: $primary-color;
   font-weight: bold;
   border: none;
   border-radius: none;
+  &:hover {
+    background-color: $primary-color;
+  }
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 3px $secondary-color solid;
+  color: $secondary-color;
+  &:hover {
+    background-color: transparent;
+    color: $secondary-color;
+    border: 3px $secondary-color solid;
+  }
+}
+
+.btn-ghost {
+  background-color: transparent;
+  border: 3px white solid;
+  color: white;
+  &:hover {
+    background-color: transparent;
+    color: white;
+    border: 3px white solid;
+  }
 }
 
 .verse-section {
@@ -41,6 +67,7 @@ body {
   padding-bottom: 2.5%;
   background-color: $secondary-color;
   color: white;
+  font-size: 22px;
 }
 
 .header-text {
@@ -75,14 +102,13 @@ body {
   padding-bottom: 2.5%;
 }
 
-.img-nav {
+%img-nav {
     position: absolute;
     z-index: -1;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background: url("img/elementary_nav.png") center center;
     opacity: .4;
     width: 100%;
     height: 100%;
@@ -95,8 +121,61 @@ body {
   z-index: 1;
   text-align: center;
 }
+
 @media (min-width: 850px) {
   .container {
     width: 820px;
   }
+}
+
+.img-nav-prek {
+  @extend %img-nav;
+  background: url("img/prek_nav.png") center center;
+}
+
+.img-nav-elementary {
+  @extend %img-nav;
+  background: url("img/elementary_nav.png") center center;
+}
+
+.step-section {
+  background-color: #F5F8FA;
+  border-right: 1px #C4C4C4 solid;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  h1 {
+    color: #343F64;
+    font-weight: bold;
+  }
+}
+
+.principal-section {
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+
+  h1 {
+    color: $header-color;
+    font-weight: bold;
+  }
+}
+
+.principal-section .section-role {
+    color: $header-color;
+    font-weight: bold;
+  }
+
+
+
+.cta-section {
+  padding-top:2.5%;
+  padding-bottom: 2.5%;
+  background-color: $secondary-color;
+  color: white;
+  text-align: center;
+}
+
+.footer {
+  background-color: $primary-grey;
+  color: white;
+  text-align: center;
 }
