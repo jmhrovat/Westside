@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="en">
   <head>
+
+    {% load static %}
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,7 +12,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Main CSS File -->
-    <link rel="stylesheet" href="base.css">
+    <!-- <link rel="stylesheet" href="base.css"> -->
+    <link rel="stylesheet" href="{% static 'base/base.css' %}">
 
     <title>Westside Christian</title>
   </head>
@@ -117,7 +121,7 @@
           <p class="section-role">Principal Kelli Knowles</p>
         </div>
         <div class="col-md-6">
-          <img src="img/principal.png"></img>
+          <img src="{% static 'base/img/principal.png' %}"></img>
         </div>
 
       </div>
