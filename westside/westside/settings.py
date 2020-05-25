@@ -25,7 +25,7 @@ SECRET_KEY = '174&4!cujvtexf!(=0xbw5!r(5hu&8++bbj@_1mw6ufrg6)n_('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['34.222.151.109', 'www.wcsredlands.com' ]
+ALLOWED_HOSTS = ['34.222.151.109', 'www.wcsredlands.com', '127.0.0.1' ]
 
 
 # Application definition
