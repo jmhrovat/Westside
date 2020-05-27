@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    {% load static %}
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Main CSS File -->
+    <!-- <link rel="stylesheet" href="base.css"> -->
+    <link rel="stylesheet" href= {% static "base/base.css" %}>
+
+    <title>Westside Christian</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Westside Christian</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">PRESCHOOL</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ELEMENTARY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CHURCH</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">PRICING</a>
+            </li>
+            <li class="nav-item">
+              <a style="color:white" class="nav-link btn btn-primary" href="#">DONATE</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+
+    <div class="container-fluid text-center" style="background-color:#5B6FB0;color:white">
+      <h1>AFFORDABLE TUITION FOR ALL NEEDS</h1>
+    </div>
+
+    <div class="container-fluid">
+      <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="daycare-tab" data-toggle="tab" href="#daycare" role="tab" aria-controls="daycare" aria-selected="true">Daycare</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="preschool-tab" data-toggle="tab" href="#preschool" role="tab" aria-controls="preschool" aria-selected="false">Preschool</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="elementary-tab" data-toggle="tab" href="#elementary" role="tab" aria-controls="elementary" aria-selected="false">Elementary</a>
+        </li>
+      </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="daycare" role="tabpanel" aria-labelledby="daycare-tab">
+            <br>
+            <div class="container">
+              <div class=row>
+                <div class="col-6">
+                  <h1>2020-2021</h1>
+                </div>
+                <div class="col-6 text-right">
+                  <button class="btn btn-primary">BOOK A VISIT</button>
+                </div>
+            </div>
+              <br>
+              <!-- <p>Annual Nonrefundable Fees</p>
+              <p>*Registration Fee</p>
+              <p>Materials / Instructional Fee</p> -->
+
+              <div class="card">
+                <div class="card-body">
+                  <h1 class="card-title">Monday - Friday</h1>
+                  <p>6:30 - 7:30 am & 3:15 - 6:00pm</p>
+                  <p>$5 / hour - Maximum of $225 / month</p>
+                </div>
+              </div>
+              <br>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="preschool" role="tabpanel" aria-labelledby="preschool-tab">
+            <br>
+              <div class="container">
+                <div class=row>
+                  <div class="col-6">
+                    <h1>2020-2021</h1>
+                  </div>
+                  <div class="col-6 text-right">
+                    <button class="btn btn-primary">BOOK A VISIT</button>
+                  </div>
+                </div>
+                <br>
+                <p>Annual Nonrefundable Fees</p>
+                <p>*Registration Fee</p>
+                <p>Materials / Instructional Fee</p>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="card">
+                      <div class="card-body">
+                        <h1 class="card-title">T / TH </h1>
+                        <p>8am - 12pm (Halfday)</p>
+                        <p>$220 / Month</p>
+                        <br>
+                        <p>Full day</p>
+                        <p>$385 / Month</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="card">
+                      <div class="card-body">
+                        <h1 class="card-title">M / W / F </h1>
+                        <p>8am - 12pm (Halfday)</p>
+                        <p>$310 / Month</p>
+                        <br>
+                        <p>Full day</p>
+                        <p>$495 / Month</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <br>
+
+                <div class="card">
+                  <div class="card-body">
+                    <h1 class="card-title">Monday - Friday</h1>
+                    <p>8am - 12pm (Halfday)</p>
+                    <p>$470 / Month</p>
+                    <br>
+                    <p>Full day</p>
+                    <p>$690 / Month</p>
+                  </div>
+                </div>
+
+                <br>
+
+              </div>
+          </div>
+          <div class="tab-pane fade" id="elementary" role="tabpanel" aria-labelledby="elementary-tab">
+            <br>
+            <div class="container">
+              <div class=row>
+                <div class="col-6">
+                  <h1>2020-2021</h1>
+                </div>
+                <div class="col-6 text-right">
+                  <button class="btn btn-primary">BOOK A VISIT</button>
+                </div>
+              </div>
+              <br>
+              <p>Annual Nonrefundable Fees</p>
+              <p>*Registration Fee: $250.00</p>
+              <p>*Registration Fee: $250.00</p>
+              <p>*Abeka Book Fee: $250.00</p>
+              <p>*New Student Testing Fee: $35.00</p>
+              <p>*SAT National Testing Fee: $50.00</p>
+              <br>
+              <div class="card">
+                <div class="card-body">
+                  <h1 class="card-title">Kindergarten</h1>
+                  <h2>Payment Plans</h2>
+                  <p>12 Month: $470.00 / Month</p>
+                  <p>11 Month: $460.00 / Month</p>
+                  <p>10 Month: $506.00 / Month </p>
+                  <hr>
+                  <h1 class="card-title">1st - 6th Grade</h1>
+                  <h2>Payment Plans</h2>
+                  <p>12 Month: $470.00 / Month</p>
+                  <p>11 Month: $460.00 / Month</p>
+                  <p>10 Month: $506.00 / Month</p>
+                </div>
+              </div>
+              <br>
+            </div>
+
+
+
+
+          </div>
+      </div>
+    </div>
+
+  <div style="background-color:#2E2E2E;color:white" class="container-fluid text-center">
+    <br>
+    <p>© Copyright by Westside Christian School</p>
+    <p>Contact Us</p>
+    <p>School Tel: (909) 793-5811</p>
+    <p>Church Tel: (909) 793-3253</p>
+    <p>Email: westsidechristianredlands@gmail.com</p>
+    <p>Address</p>
+    <p>1495 W Olive Avenue</p>
+    <p>Redlands, Ca 92373</p>
+    <br>
+  </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
