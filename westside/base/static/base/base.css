@@ -2,18 +2,41 @@ body {
   font: 100% Montserrat, sans-serif;
   color: #2E2E2E; }
 
-.home_hero {
-  padding-top: 175px;
-  background-size: cover;
-  color: white;
-  text-align: right;
-  margin-bottom: 0;
-  height: 500px;
-  padding-right: 15px; }
+@media screen and (max-width: 992px) {
+  .home_hero {
+    padding-top: 175px;
+    color: white;
+    text-align: right;
+    margin-bottom: 0;
+    height: 500px;
+    padding-right: 15px;
+    background: black;
+    background-image: url("img/home_mobile_hero.png");
+    background-size: cover; }
 
-.home_hero {
-  background-image: url("img/hero_image.png"); }
+  .hero-text {
+    text-align: center;
+    justify-content: center; }
 
+  .principal-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; } }
+@media screen and (min-width: 993px) {
+  .home_hero {
+    padding-top: 175px;
+    color: white;
+    text-align: right;
+    margin-bottom: 0;
+    height: 500px;
+    padding-right: 15px;
+    background: black;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.54)), url("img/hero_image.png"); }
+
+  .hero-text {
+    width: 500px;
+    float: right; } }
 .btn-primary {
   background-color: #A61B1B;
   font-weight: bold;
