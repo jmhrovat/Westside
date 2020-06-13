@@ -25,7 +25,7 @@ SECRET_KEY = '174&4!cujvtexf!(=0xbw5!r(5hu&8++bbj@_1mw6ufrg6)n_('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['www.wcsredlands.org','54.69.240.231','westside.eba-sd7aygrj.us-west-2.elasticbeanstalk.com']
+ALLOWED_HOSTS = ['www.wcsredlands.org','54.69.240.231','westside.eba-sd7aygrj.us-west-2.elasticbeanstalk.com', '127.0.0.1']
 
 
 # Application definition
