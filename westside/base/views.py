@@ -1,11 +1,33 @@
 from django.shortcuts import render
 
 # Create your views here.
+
 def index(request):
-    return render(request, 'base/index.html')
+
+    nav_status = {
+        'preschool': 'inactive',
+        'elementary': 'inactive',
+        'pricing': 'inactive',
+        'church': 'inactive',
+    }
+
+    return render(request, 'base/index.html', context)
 
 def preschool(request):
-    return render(request, 'base/preschool.html')
+
+    nav_status = {
+        'preschool': 'active',
+        'elementary': 'inactive',
+        'pricing': 'inactive',
+        'church': 'inactive',
+    }
+
+    context = {
+        'nav_status': nav_status,
+        'body_class': 'body_secondary'
+    }
+
+    return render(request, 'base/preschool.html', context)
 
 def elementary(request):
 
@@ -24,7 +46,31 @@ def elementary(request):
     return render(request, 'base/elementary.html', context)
 
 def pricing(request):
-    return render(request, 'base/pricing.html')
+
+    nav_status = {
+        'preschool': 'inactive',
+        'elementary': 'inactive',
+        'pricing': 'active',
+        'church': 'inactive',
+    }
+
+    context = {
+        'nav_status': nav_status,
+        'body_class': 'body_secondary'
+    }
+    return render(request, 'base/pricing.html', context)
 
 def church(request):
-    return render(request, 'base/church.html')
+    nav_status = {
+        'preschool': 'inactive',
+        'elementary': 'inactive',
+        'pricing': 'inactive',
+        'church': 'active',
+    }
+
+    context = {
+        'nav_status': nav_status,
+        'body_class': 'body_secondary'
+    }
+
+    return render(request, 'base/church.html', context)

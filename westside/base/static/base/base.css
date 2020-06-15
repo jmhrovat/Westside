@@ -11,6 +11,9 @@ body {
 a:visited {
   color: #2E2E2E; }
 
+a:hover {
+  text-decoration: none; }
+
 .display-4 {
   font-size: 2.6 rem; }
 
@@ -226,8 +229,13 @@ a:visited {
   background-color: #F5F8FA;
   border: none; }
 
+.prek-card {
+  height: 250px;
+  box-shadow: 1px gray;
+  box-shadow: 3px 3px 8px #888888; }
+
 .feature-card {
-  height: 200px;
+  height: 250px;
   box-shadow: 1px gray;
   box-shadow: 3px 3px 8px #888888; }
 
@@ -240,11 +248,13 @@ a:visited {
   color: #343F64;
   font-weight: bold; }
 
-.post-head h1 {
-  padding-top: 5%;
-  padding-bottom: 5%;
-  color: white;
-  font-weight: bold; }
+.post-head {
+  background-color: #2536D9; }
+  .post-head h1 {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: white;
+    font-weight: bold; }
 
 .tagline-header {
   font-weight: bold;
@@ -254,7 +264,7 @@ a:visited {
   margin-bottom: 0; }
 
 .tagline-img {
-  height: 55px; }
+  height: 47px; }
 
 .cta-section {
   padding-top: 2.5%;

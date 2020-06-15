@@ -18,8 +18,13 @@ body {
   background-color: #F5F8FA;
 }
 
+
 a:visited {
   color: $primary-grey;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 @mixin hero_image {
@@ -34,9 +39,6 @@ a:visited {
 .display-4 {
   font-size: 2.6 rem;
 }
-
-
-
 
 @media screen and (max-width: 992px) {
 
@@ -286,8 +288,14 @@ a:visited {
   border: none;
 }
 
+.prek-card {
+  height:250px;
+  box-shadow: 1px gray;
+  box-shadow: 3px 3px 8px #888888;
+}
+
 .feature-card {
-  height:200px;
+  height:250px;
   box-shadow: 1px gray;
   box-shadow: 3px 3px 8px #888888;
 }
@@ -305,6 +313,8 @@ a:visited {
 }
 
 .post-head {
+
+  background-color: $primary-color;
 
   h1 {
     padding-top: 5%;
@@ -326,10 +336,8 @@ a:visited {
 }
 
 .tagline-img {
-  height: 55px;
+  height: 47px;
 }
-
-
 
 .cta-section {
   padding-top:2.5%;
