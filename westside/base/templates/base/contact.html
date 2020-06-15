@@ -1,0 +1,28 @@
+{% extends 'base/base.html' %}
+
+{% block content%}
+
+{% load static %}
+
+
+<div class="container-fluid text-center post-head">
+  <h1>CONTACT US</h1>
+</div>
+
+<div class="container">
+  <br>
+  <h1>Contact Us Form</h1>
+  <p>To message us, please fill out the below form and related information.</p>
+  <p>You can also call us at (909) 793-5811.</p>
+  <br>
+  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+  <script>
+    hbspt.forms.create({
+  	portalId: "6104873",
+  	formId: "b9d5e296-1876-4ea7-974b-0574ef98f401"
+  });
+  </script>
+
+</div>
+
+{% endblock %}
