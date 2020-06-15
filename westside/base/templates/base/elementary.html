@@ -1,191 +1,132 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    {% load static %}
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+{% extends 'base/base.html' %}
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- Main CSS File -->
-    <!-- <link rel="stylesheet" href="base.css"> -->
-    <link rel="stylesheet" href= {% static "base/base.css" %}>
+{% block content%}
 
+{% load static %}
 
-    <title>Westside Christian</title>
-  </head>
-  <body style="background-color: #F5F8FA">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="https://www.wcsredlands.org">Westside Christian</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<div class="jumbotron jumbotron-fluid elementary_hero">
+  <div class="hero-text">
+    <h1 class="display-4">Discover our Elementary School</h1>
+    <button href="https://meetings.hubspot.com/jmhrovat" class="btn btn-primary hero-btn">BOOK A VISIT</button>
+  </div>
+</div>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.wcsredlands.org/preschool">PRESCHOOL</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="https://www.wcsredlands.org/elementary">ELEMENTARY</a>
+<div class="container-fluid text-center verse-section">
+  <p class="verse-text">"Each of you should use whatever gift you have received to serve others, as faithful stewards of God's grace in its various forms."</p>
+  <p class="verse-ref">1 Peter 4:10</p>
+</div>
 
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.wcsredlands.org/church">CHURCH</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.wcsredlands.org/pricing">PRICING</a>
-            </li>
-            <li class="nav-item">
-              <a style="color:white" class="nav-link btn btn-primary" href="#">DONATE</a>
-            </li>
-          </ul>
-        </div>
-    </nav>
-
-    <div class="jumbotron jumbotron-fluid elementary_hero">
-      <div class="hero-text">
-        <h1 class="display-4">Discover our Elementary School</h1>
-        <button href="https://meetings.hubspot.com/jmhrovat" class="btn btn-primary hero-btn">BOOK A VISIT</button>
-      </div>
-    </div>
-
-    <div class="container-fluid text-center verse-section">
-      <p>"Each of you should use whatever gift you have received to serve others, as faithful stewards of God's grace in its various forms."</p>
-      <p>1 Peter 4:10</p>
-    </div>
-
-    <div class="container-fluid text-center">
-      <div class="container">
-        <br>
-        <h1>OUR ELEMENTARY SCHOOL</h1>
-        <p>Westside Christian School prides itself by providing its students with
-          a Wholesome, Christian curriculum that reflects the design of our Lord.
-          By utilizing the Abeka Curriculum, we are not only setting our students
-          up academically, but we are setting their lifelong path and walk with
-          our Lord.  </p>
-        </div>
-    </div>
+<div class="container-fluid text-center">
+  <div style="background-color: #f5f8fa" class="container">
     <br>
-
-    <div class="container-fluid text-center values-section">
-      <h1>WHAT WE OFFER</h1>
+    <h1>OUR ELEMENTARY SCHOOL</h1>
+    <p>Westside Christian School prides itself by providing its students with
+      a Wholesome, Christian curriculum that reflects the design of our Lord.
+      By utilizing the Abeka Curriculum, we are not only setting our students
+      up academically, but we are setting their lifelong path and walk with
+      our Lord.  </p>
     </div>
+</div>
+<br>
 
-    <br>
+<div class="container-fluid text-center values-section">
+  <h1>WHAT WE OFFER</h1>
+</div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="card lead-card">
-            <div class="card-body">
-              <h1 class="card-title">Our Academics</h1>
-              <p class="card-text">Westside Christian School prides itself by
-                providing its students with a Wholesome, Christian curriculum
-                that reflects the design of our Lord. By utilizing the Abeka
-                Curriculum, we are not only setting our students up academically,
-                 but we are setting their lifelong path and walk with our Lord.
-              </p>
-            </div>
-          </div>
-        </div>
+<br>
 
-        <div class="col-md-6">
-          <div class="card feature-card">
-            <div class="card-body">
-              <h1 class="card-title">Literacy and Writing</h1>
-              <p class="card-text"> The Abeka curriculum provides children with age appropriate Language, Literacy, and writing skills that reflects a Christian appropriate design.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-6">
-          <div class="card feature-card">
-            <div class="card-body">
-              <h1 class="card-title">Penmanship</h1>
-              <p class="card-text"> The Abeka curriculum provides children with Penmanship skills that exceed standard and cursive writing expectations.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card feature-card">
-            <div class="card-body">
-              <h1 class="card-title">Mathematics</h1>
-              <p class="card-text"> The Abeka curriculum provides children with age appropriate mathematical skills that reflects a Christian appropriate design.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    <div class="row">
-      <div class="col-md-6">
-        <div class="card feature-card">
-          <div class="card-body">
-            <h1 class="card-title">Science</h1>
-            <p class="card-text"> The Abeka curriculum provides children with an age appropriate  understanding of how the Lord designed the world from a scientific standpoint.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card feature-card">
-          <div class="card-body">
-            <h1 class="card-title">History and Geography</h1>
-            <p class="card-text"> The Abeka curriculum provides children with an age appropriate understanding of how the Lord has guided us in the divine creation of the world.
-            </p>
-          </div>
-        </div>
+<div class="container">
+<div class="row">
+  <div class="col-md-6">
+    <div class="card lead-card">
+      <div class="card-body">
+        <h1 class="card-title">Our Academics</h1>
+        <p class="card-text">Westside Christian School prides itself by
+          providing its students with a Wholesome, Christian curriculum
+          that reflects the design of our Lord. By utilizing the Abeka
+          Curriculum, we are not only setting our students up academically,
+           but we are setting their lifelong path and walk with our Lord.
+        </p>
       </div>
     </div>
-
-    <div class="row">
-      <div class="col-md-6">
-        <div class="card feature-card">
-          <div class="card-body">
-            <h1 class="card-title">Physical Education</h1>
-            <p class="card-text"> Our Physical Education Program guides students to achieve their physical goals, as well as their team-building skills that reflects a Christian attitude and advancement abilities.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
   </div>
 
+  <div class="col-md-6">
+    <div class="card feature-card">
+      <div class="card-body">
+        <h1 class="card-title">Literacy and Writing</h1>
+        <p class="card-text"> The Abeka curriculum provides children with age appropriate Language, Literacy, and writing skills that reflects a Christian appropriate design.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="card feature-card">
+      <div class="card-body">
+        <h1 class="card-title">Penmanship</h1>
+        <p class="card-text"> The Abeka curriculum provides children with Penmanship skills that exceed standard and cursive writing expectations.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card feature-card">
+      <div class="card-body">
+        <h1 class="card-title">Mathematics</h1>
+        <p class="card-text"> The Abeka curriculum provides children with age appropriate mathematical skills that reflects a Christian appropriate design.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="card feature-card">
+      <div class="card-body">
+        <h1 class="card-title">Science</h1>
+        <p class="card-text"> The Abeka curriculum provides children with an age appropriate  understanding of how the Lord designed the world from a scientific standpoint.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card feature-card">
+      <div class="card-body">
+        <h1 class="card-title">History and Geography</h1>
+        <p class="card-text"> The Abeka curriculum provides children with an age appropriate understanding of how the Lord has guided us in the divine creation of the world.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="card feature-card">
+      <div class="card-body">
+        <h1 class="card-title">Physical Education</h1>
+        <p class="card-text"> Our Physical Education Program guides students to achieve their physical goals, as well as their team-building skills that reflects a Christian attitude and advancement abilities.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<br>
+
+<div class="container-fluid text-center cta-section">
+  <h1>Interested in Westside?</h1>
+  <p>Visit our beautiful campus to learn more about our values, ministry,
+    and family. We can’t wait to meet you.</p>
+  <button class="btn btn-ghost">BOOK A VISIT</button>
   <br>
+  <br>
+</div>
 
-  <div class="container-fluid text-center cta-section">
-    <h1>Interested in Westside?</h1>
-    <p>Visit our beautiful campus to learn more about our values, ministry,
-      and family. We can’t wait to meet you.</p>
-    <button class="btn btn-ghost">BOOK A VISIT</button>
-    <br>
-    <br>
-  </div>
-
-  <div class="container-fluid text-center footer">
-    <br>
-    <p>© Copyright by Westside Christian School</p>
-    <p>Contact Us</p>
-    <p>School Tel: (909) 793-5811</p>
-    <p>Church Tel: (909) 793-3253</p>
-    <p>Email: westsidechristianredlands@gmail.com</p>
-    <p>Address</p>
-    <p>1495 W Olive Avenue</p>
-    <p>Redlands, Ca 92373</p>
-    <br>
-  </div>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
-</html>
+{% endblock %}
