@@ -2,6 +2,9 @@ body {
   font: 100% Montserrat, sans-serif;
   color: #2E2E2E; }
 
+a:visited {
+  color: #2E2E2E; }
+
 @media screen and (max-width: 992px) {
   .home_hero {
     padding-top: 175px;
@@ -79,36 +82,44 @@ body {
   .hero-text {
     width: 500px;
     float: right; } }
+.btn {
+  padding: 8px 12px 8px 12px;
+  border-radius: 0%; }
+
 .btn-primary {
-  background-color: #A61B1B;
+  background-color: #FFBA00;
+  color: #2E2E2E;
   font-weight: bold;
   border: none;
   border-radius: none; }
   .btn-primary:hover {
-    background-color: #A61B1B; }
+    background-color: #2E2E2E;
+    color: #FFBA00; }
 
 .btn-secondary {
   background-color: transparent;
-  border: 3px #5B6FB0 solid;
-  color: #5B6FB0; }
+  border: 3px #2536D9 solid;
+  color: #2536D9;
+  font-weight: bold; }
   .btn-secondary:hover {
-    background-color: transparent;
-    color: #5B6FB0;
-    border: 3px #5B6FB0 solid; }
+    background-color: #2536D9;
+    color: white;
+    border: 3px #2536D9 solid; }
 
 .btn-ghost {
   background-color: transparent;
   border: 3px white solid;
-  color: white; }
+  color: white;
+  font-weight: bold; }
   .btn-ghost:hover {
-    background-color: transparent;
-    color: white;
+    background-color: white;
+    color: #2536D9;
     border: 3px white solid; }
 
 .verse-section {
   padding-top: 2.5%;
   padding-bottom: 2.5%;
-  background-color: #5B6FB0;
+  background-color: #2536D9;
   color: white;
   font-size: 22px; }
 
@@ -126,12 +137,12 @@ body {
     margin-bottom: 5px;
     padding-top: 8px; }
   .nav-link.active {
-    color: #A61B1B; }
+    color: #2536D9; }
 
 .values-section {
   padding-top: 2.5%;
   padding-bottom: 2.5%;
-  background-color: #5B6FB0; }
+  background-color: #2536D9; }
   .values-section h1 {
     color: white;
     font-weight: bold; }
@@ -159,7 +170,8 @@ body {
   padding-bottom: 200px;
   position: relative;
   z-index: 1;
-  text-align: center; }
+  text-align: center;
+  text-decoration: none; }
 
 @media (min-width: 850px) {
   .container {
@@ -217,7 +229,7 @@ body {
 .cta-section {
   padding-top: 2.5%;
   padding-bottom: 2.5%;
-  background-color: #5B6FB0;
+  background-color: #2536D9;
   color: white;
   text-align: center; }
   .cta-section h1 {

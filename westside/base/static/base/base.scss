@@ -1,6 +1,6 @@
 $font-stack:    Montserrat, sans-serif;
-$primary-color: #A61B1B;
-$secondary-color: #5B6FB0;
+$primary-color: #2536D9;
+$secondary-color: #FFBA00;
 $header-color: #343F64;
 $primary-grey: #2E2E2E;
 $font-color: $primary-grey;
@@ -8,6 +8,10 @@ $font-color: $primary-grey;
 body {
   font: 100% $font-stack;
   color: $font-color;
+}
+
+a:visited {
+  color: $primary-grey;
 }
 
 @mixin hero_image {
@@ -91,24 +95,32 @@ body {
   }
 }
 
+.btn {
+  padding: 8px 12px 8px 12px;
+  border-radius: 0%;
+}
+
 .btn-primary {
-  background-color: $primary-color;
+  background-color: $secondary-color;
+  color: $primary-grey;
   font-weight: bold;
   border: none;
   border-radius: none;
   &:hover {
-    background-color: $primary-color;
+    background-color: $primary-grey;
+    color: $secondary-color;
   }
 }
 
 .btn-secondary {
   background-color: transparent;
-  border: 3px $secondary-color solid;
-  color: $secondary-color;
+  border: 3px $primary-color solid;
+  color: $primary-color;
+  font-weight: bold;
   &:hover {
-    background-color: transparent;
-    color: $secondary-color;
-    border: 3px $secondary-color solid;
+    background-color: $primary-color;
+    color: white;
+    border: 3px $primary-color solid;
   }
 }
 
@@ -118,9 +130,10 @@ body {
   background-color: transparent;
   border: 3px white solid;
   color: white;
+  font-weight: bold;
   &:hover {
-    background-color: transparent;
-    color: white;
+    background-color: white;
+    color: $primary-color;
     border: 3px white solid;
   }
 }
@@ -128,7 +141,7 @@ body {
 .verse-section {
   padding-top:2.5%;
   padding-bottom: 2.5%;
-  background-color: $secondary-color;
+  background-color: $primary-color;
   color: white;
   font-size: 22px;
 }
@@ -156,7 +169,7 @@ body {
 .values-section {
   padding-top:2.5%;
   padding-bottom: 2.5%;
-  background-color: $secondary-color;
+  background-color: $primary-color;
   h1 {
     color: white;
     font-weight: bold;
@@ -191,6 +204,7 @@ body {
   position: relative;
   z-index: 1;
   text-align: center;
+  text-decoration: none;
 }
 
 @media (min-width: 850px) {
@@ -275,7 +289,7 @@ body {
 .cta-section {
   padding-top:2.5%;
   padding-bottom: 2.5%;
-  background-color: $secondary-color;
+  background-color: $primary-color;
   color: white;
   text-align: center;
   h1 {
